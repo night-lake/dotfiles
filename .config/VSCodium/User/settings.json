@@ -1,0 +1,106 @@
+{
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[less]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[vue]": {
+		"editor.defaultFormatter": "Vue.volar"
+	},
+	"catppuccin.boldKeywords": true,
+	"editor.bracketPairColorization.enabled": true,
+	"editor.fontFamily": "'FiraCode Nerd Font', 'FiraCode Nerd Font', 'FiraCode Nerd Font'",
+	"editor.fontLigatures": true,
+	"editor.formatOnSave": true,
+	"editor.guides.bracketPairs": true,
+	"editor.inlineSuggest.enabled": true,
+	"editor.insertSpaces": false,
+	"editor.minimap.enabled": false,
+	"editor.renderControlCharacters": false,
+	"editor.renderWhitespace": "none",
+	"editor.wordWrap": "on",
+	"eslint.codeActionsOnSave.rules": [],
+	"files.autoSave": "afterDelay",
+	"files.eol": "\n",
+	"files.exclude": {
+		"**/.DS_Store": false,
+		"**/.git": false,
+		"**/.hg": false,
+		"**/.svn": false,
+		"**/CVS": false,
+		"**/Thumbs.db": false
+	},
+	"git.confirmSync": false,
+	"git.ignoreRebaseWarning": true,
+	"githubPullRequests.pullBranch": "never",
+	"gitlens.defaultDateFormat": "MMMM Do, YYYY h:mma",
+	"gitlens.defaultDateShortFormat": "MMM Do YY",
+	"gitlens.defaultTimeFormat": "h:ma",
+	"gitlens.statusBar.enabled": false,
+	"javascript.preferences.quoteStyle": "single",
+	"liveServer.settings.donotShowInfoMsg": true,
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"scm.alwaysShowActions": true,
+	"scm.defaultViewMode": "tree",
+	"security.workspace.trust.banner": "never",
+	"security.workspace.trust.enabled": false,
+	"security.workspace.trust.untrustedFiles": "open",
+	"tailwindCSS.emmetCompletions": true,
+	"tailwindCSS.experimental.classRegex": [
+		["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+		["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+	],
+	"typescript.inlayHints.parameterNames.enabled": "all",
+	"typescript.preferences.qouteStyle": "single",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"window.commandCenter": true,
+	"workbench.colorTheme": "Catppuccin Macchiato",
+	"workbench.editorAssociations": {
+		"*.sqlite3": "default"
+	},
+	"workbench.enableExperiments": false,
+	"workbench.iconTheme": "catppuccin-macchiato",
+	"workbench.settings.enableNaturalLanguageSearch": false,
+	"workbench.startupEditor": "none",
+	"workbench.tree.indent": 12,
+	"zenMode.centerLayout": false,
+	"zenMode.hideLineNumbers": false,
+	"indentRainbow.colors": [
+		"#ed879650",
+		"#f5a97f50",
+		"#eed49f50",
+		"#a6da9550",
+		"#8aadf450",
+		"#c6a0f650"
+	],
+	"indentRainbow.tabmixColor": "#f5bde650",
+	"indentRainbow.errorColor": "#91d7e350",
+	"files.associations": {
+		"*.toml": "ini"
+	},
+	"catppuccin.accentColor": "pink",
+	"workbench.activityBar.location": "top",
+	"terminal.external.linuxExec": "kitty",
+	"terminal.integrated.defaultProfile.linux": "fish",
+	"git.autofetch": true
+}

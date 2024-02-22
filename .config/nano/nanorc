@@ -1,0 +1,6 @@
+set autoindent
+set mouse
+set softwrap
+set zap
+set linenumbers
+set tabsize 4

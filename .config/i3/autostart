@@ -24,3 +24,6 @@ exec --no-startup-id nm-applet
 
 # xsslock: screen locking
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+
+# dbus: secret service
+exec --no-startup-id dbus-update-activation-environment --all

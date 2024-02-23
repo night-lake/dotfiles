@@ -38,7 +38,7 @@ gaps inner 6
 gaps outer 4
 
 # smart borders; only draw borders if number of windows = >1
-smart_borders on
+smart_borders off
 
 # set font
 font pango:FiraCode Nerd Font 12

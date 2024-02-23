@@ -6,6 +6,7 @@ include /home/amelia/.config/i3/binds/layout
 include /home/amelia/.config/i3/binds/media
 include /home/amelia/.config/i3/binds/programs
 include /home/amelia/.config/i3/binds/resize
+include /home/amelia/.config/i3/binds/session
 include /home/amelia/.config/i3/binds/workspace
 include /home/amelia/.config/i3/theme
 
@@ -13,18 +14,6 @@ set $mod Mod4
 
 exec_always --no-startup-id source /etc/profile.d/locale.sh
 exec_always --no-startup-id xinput set-prop 164;10u "libinput Disable While Typing Enabled" 0
-
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-
-# reload the configuration file
-bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
-# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-
-bindsym $mod+Shift+e exec --no-startup-id rofi -show power-menu -modi power-menu:rofi-power-menu 
 
 # Plasma compatibility improvements
 for_window [window_role="pop-up"] floating enable

@@ -1,5 +1,5 @@
 # feh: wallpaper
-exec_always --no-startup-id feh --bg-fill $HOME/pictures/wallpapers/foggy_peaks.png --no-fehbg 
+exec_always --no-startup-id feh --bg-fill $HOME/.dotfiles/wallpapers/foggy_peaks.png --no-fehbg 
 
 # picom: compositor
 exec_always --no-startup-id picom -cbf --config ~/.config/picom/picom.conf

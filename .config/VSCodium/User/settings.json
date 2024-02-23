@@ -102,5 +102,6 @@
 	"workbench.activityBar.location": "top",
 	"terminal.external.linuxExec": "kitty",
 	"terminal.integrated.defaultProfile.linux": "fish",
-	"git.autofetch": true
+	"git.autofetch": true,
+	"catppuccin.extraBordersEnabled": true
 }

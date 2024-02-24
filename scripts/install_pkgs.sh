@@ -15,19 +15,7 @@ bold="\e[1m"
 underline="\e[4m"
 normal="\e[0m"
 
-function spinner {
-    local pid=$!
-    local delay=0.75
-    local spinstr='|/-\'
-    while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
-        local temp=${spinstr#?}
-        printf " [%c]  " "$spinstr"
-        local spinstr=$temp${spinstr%"$temp"}
-        sleep $delay
-        printf "\b\b\b\b\b\b"
-    done
-    printf "    \b\b\b\b"
-}
+global TASK_COUNT=0
 
 function yes_or_no {
     while true; do
@@ -40,13 +28,15 @@ function yes_or_no {
 }
 
 function create_task {
+    TOTAL_TASKS=6
+    ((TASK_COUNT=TASK_COUNT+1))
 	local LABEL=$1
 
-	echo -e "${blue}${bold}:: ${normal}${text} Installing ${bold}${LABEL}${normal}"
+	echo -e "${blue}${bold}:: ${normal}${text} Step ${TASK_COUNT}/${TOTAL_TASKS} | ${bold}${LABEL}${normal}"
 
-	$2 & spinner
+	$2
 
-	echo -e "${green}${bold}:: ${normal}${text} Installed ${bold}${LABEL}${normal}"
+	echo -e "${green}${bold}:: ${normal}${text} Step ${TASK_COUNT}/${TOTAL_TASKS} | ${bold}${LABEL}${normal}"
 	echo -e ""
 }
 
@@ -81,6 +71,13 @@ function install_package_addons {
     # yay -S --noconfirm --needed rofi-greenclip rofi-power-menu
 }
 
+function copy_dotfiles {
+    echo "copy dotfiles!"
+    # git clone https://github.com/night-lake/dotfiles $HOME/.dotfiles
+	# cd $HOME/.dotfiles
+    # stow .
+}
+
 function run_install {
 	echo -e ""
 
@@ -88,8 +85,12 @@ function run_install {
 	create_task "System Packages" install_system
 	create_task "Window Manager & Related Packages" install_wm
     create_task "Userspace" install_userspace
+    create_task "Package Addons" install_package_addons
+    create_task "Prepare Dotfiles" copy_dotfiles 
 
-	echo -e "${green}${bold}DONE:${normal}${text} Run ${italic}install_ctp.sh${normal} to install Catppuccin"
+	echo -e "${green}${bold}DONE:${normal}${text} Run ${italic}install_ctp.sh${normal} from the dotfiles folder to install Catppuccin"
+    echo -e "${blue}${bold}NOTICE:${normal}${text} It is recommended to reboot into the working system BEFORE installing Catppuccin"
+
 }
 
 

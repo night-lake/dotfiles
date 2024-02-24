@@ -8,7 +8,7 @@ bindsym $mod+f exec --no-startup-id rofi -show emoji
 bindsym $mod+v exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard -run-command "i3-msg exec '{cmd}'"
 
 # kitty
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec alacritty
 
 # file manager
 bindsym $mod+e exec --no-startup-id thunar

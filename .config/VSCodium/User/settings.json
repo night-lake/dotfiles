@@ -103,5 +103,6 @@
 	"terminal.external.linuxExec": "kitty",
 	"terminal.integrated.defaultProfile.linux": "fish",
 	"git.autofetch": true,
-	"catppuccin.extraBordersEnabled": true
+	"catppuccin.extraBordersEnabled": true,
+	"terminal.integrated.enableMultiLinePasteWarning": false
 }

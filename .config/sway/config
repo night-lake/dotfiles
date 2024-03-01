@@ -1,0 +1,18 @@
+# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+
+set $mod Mod4
+
+include /home/amelia/.config/i3/autostart
+include /home/amelia/.config/i3/binds/floating
+include /home/amelia/.config/i3/binds/focus
+include /home/amelia/.config/i3/binds/layout
+include /home/amelia/.config/i3/binds/media
+include /home/amelia/.config/i3/binds/programs
+include /home/amelia/.config/i3/binds/resize
+include /home/amelia/.config/i3/binds/session
+include /home/amelia/.config/i3/binds/workspace
+include /home/amelia/.config/i3/theme
+include /home/amelia/.config/i3/window_rules
+
+exec_always --no-startup-id source /etc/profile.d/locale.sh
+exec_always --no-startup-id xinput set-prop 164;10u "libinput Disable While Typing Enabled" 0

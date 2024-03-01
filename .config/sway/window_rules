@@ -1,0 +1,3 @@
+for_window [window_role="dialog"] floating enable
+for_window [window_role="menu"] floating enable
+for_window [window_role="pop-up"] floating enable

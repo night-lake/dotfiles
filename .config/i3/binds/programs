@@ -1,17 +1,17 @@
 # rofi: drun/window/calc
-bindsym $mod+space exec --no-startup-id rofi -show drun -run-command "i3-msg exec '{cmd}'"
+bindsym $mod+space exec rofi -show drun -run-command "i3-msg exec '{cmd}'"
 
 # rofi: emoji
-bindsym $mod+f exec --no-startup-id rofi -show emoji
+bindsym $mod+f exec rofi -show emoji
 
 # rofi: clipboard
-bindsym $mod+v exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard -run-command "i3-msg exec '{cmd}'"
+bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command "i3-msg exec '{cmd}'"
 
 # kitty
 bindsym $mod+Return exec alacritty
 
 # file manager
-bindsym $mod+e exec --no-startup-id thunar
+bindsym $mod+e exec thunar
 
 # manual capture (click and drag)
 bindsym $mod+Shift+Print exec --no-startup-id flameshot gui

@@ -1,0 +1,76 @@
+rules:
+    # SECTION: Electron
+
+    # SECTION: Slack
+    - name: Slack (Main)
+      target: ~/.config/Slack
+      rewrite: ~/.local/state/slack
+      env:
+          GTK_THEME: "Catppuccin-Macchiato-Standard-Pink-Dark:dark"
+
+    - name: Slack (Cache)
+      target: ~/.config/Slack/Cache
+      rewrite: ~/.local/state/slack/Cache
+
+    - name: Slack (sentry)
+      target: ~/.config/Slack/sentry
+      rewrite: ~/.local/state/slack/sentry
+
+    - name: Slack (sentry)
+      target: ~/.config/Slack/sentry
+      rewrite: ~/.local/state/slack/sentry
+
+    - name: Slack (Service Worker)
+      target: ~/.config/Slack/Service Worker
+      rewrite: ~/.local/state/slack/Service Worker
+
+    - name: Slack (IndexedDB)
+      target: ~/.config/Slack/IndexedDB
+      rewrite: ~/.local/state/slack/IndexedDB
+    
+    - name: Slack (NPS)
+      target: ~/.config/Slack/Network Persistent State
+      rewrite: ~/.local/state/slack/Network Persistent State
+      mode: file
+
+    - name: Slack (TransportSecurity)
+      target: ~/.config/Slack/TransportSecurity
+      rewrite: ~/.local/state/slack/TransportSecurity
+      mode: file
+    # !SECTION
+
+    # SECTION: GH Desktop
+    - name: Electron Cleanup (Github Desktop)
+      target: ~/.config/GitHub Desktop
+      rewrite: ~/.local/state/ghdestkop
+      env:
+          GTK_THEME: "Catppuccin-Macchiato-Standard-Pink-Dark:dark"
+    # !SECTION
+
+    # SECTION: Discord
+    - name: Discord (Main)
+      target: ~/.config/discord
+      rewrite: ~/.local/state/discord
+      env:
+          GTK_THEME: "Catppuccin-Macchiato-Standard-Pink-Dark:dark"
+
+    - name: Discord (Code Cache)
+      target: ~/.config/discord/Code Cache
+      rewrite: ~/.local/state/discord/Code Cache
+
+    - name: Discord (Cache)
+      target: ~/.config/discord/Cache
+      rewrite: ~/.local/state/discord/Cache
+
+    - name: Discord (NPS)
+      target: ~/.config/discord/Network Persistent State
+      rewrite: ~/.local/state/discord/Network Persistent State
+      mode: file
+
+    - name: Discord (TransportSecurity)
+      target: ~/.config/discord/TransportSecurity
+      rewrite: ~/.local/state/discord/TransportSecurity
+      mode: file
+    # !SECTION
+
+    # !SECTION

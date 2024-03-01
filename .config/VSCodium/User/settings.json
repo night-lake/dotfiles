@@ -104,5 +104,12 @@
 	"terminal.integrated.defaultProfile.linux": "fish",
 	"git.autofetch": true,
 	"catppuccin.extraBordersEnabled": true,
-	"terminal.integrated.enableMultiLinePasteWarning": false
+	"terminal.integrated.enableMultiLinePasteWarning": false,
+	"window.menuBarVisibility": "toggle",
+	"[shellscript]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format"
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }

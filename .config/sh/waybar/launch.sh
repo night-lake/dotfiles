@@ -1,2 +1,0 @@
-killall -q waybar
-waybar

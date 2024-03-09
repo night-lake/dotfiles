@@ -48,6 +48,14 @@ corner_radius 12
 blur enable
 blur_radius 2
 
-shadows enable
-shadow_blur_radius 5
-shadow_color #181926F0
+shadows on
+shadows_on_csd off
+shadow_blur_radius 20
+shadow_color #1819267F
+
+
+# Window background blur
+blur on
+blur_xray off
+blur_passes 2
+blur_radius 5

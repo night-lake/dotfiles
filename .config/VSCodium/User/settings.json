@@ -96,7 +96,7 @@
 	"indentRainbow.tabmixColor": "#f5bde650",
 	"indentRainbow.errorColor": "#91d7e350",
 	"files.associations": {
-		"*.toml": "ini"
+		"*.toml": "toml"
 	},
 	"catppuccin.accentColor": "pink",
 	"workbench.activityBar.location": "top",
@@ -111,5 +111,6 @@
 	},
 	"[scss]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	}
+	},
+	"redhat.telemetry.enabled": false
 }

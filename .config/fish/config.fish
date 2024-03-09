@@ -1,4 +1,5 @@
 source /home/amelia/.config/fish/xdg.fish
+fish_add_path $XDG_BIN_HOME
 
 set -gx GTK_THEME 'Catppuccin-Macchiato-Standard-Pink-dark:dark'
 

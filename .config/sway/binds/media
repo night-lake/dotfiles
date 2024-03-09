@@ -1,7 +1,7 @@
 # adjust volume using pamixer (pipewire)
-bindsym XF86AudioRaiseVolume exec --no-startup-id $HOME/.config/sh/i3/volume.sh up
-bindsym XF86AudioLowerVolume exec --no-startup-id $HOME/.config/sh/i3/volume.sh down
-bindsym XF86AudioMute exec --no-startup-id $HOME/.config/sh/i3/volume.sh mute
+bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -u & swayosd-client --output-volume 5 --max-volume 100
+bindsym XF86AudioLowerVolume exec --no-startup-id pamixer - u & swayosd-client --output-volume -5 --max-volume 100
+bindsym XF86AudioMute exec --no-startup-id swayosd-client --output-volume mute-toggle
 
 # control playing media
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
@@ -10,5 +10,9 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
 # adjust brightness with brightnessctl
-bindsym XF86MonBrightnessUp exec --no-startup-id $HOME/.config/sh/i3/brightness.sh up
-bindsym XF86MonBrightnessDown exec --no-startup-id $HOME/.config/sh/i3/brightness.sh down
+bindsym XF86MonBrightnessUp  exec swayosd-client --brightness raise
+bindsym XF86MonBrightnessDown exec swayosd-client --brightness down
+
+# lock binds
+bindsym --release Caps_Lock exec swayosd-client --caps-lock-led input4::capslock
+bindsym --release Num_Lock exec swayosd-client --num-lock

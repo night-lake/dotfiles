@@ -1,11 +1,11 @@
 # swww: wallpaper
 exec_always --no-startup-id wbg /home/amelia/.dotfiles/wallpapers/foggy_peaks.png
 
-# picom: compositor
-# exec_always --no-startup-id picom -cbf --config ~/.config/picom/picom.conf
+# swayosd: volume/brightness indicators
+exec_always --no-startup-id swayosd-server
 
-# waybar: bar
-exec_always --no-startup-id exec ../sh/waybar/launch.sh
+# ironbar: bar
+exec_always --no-startup-id /home/amelia/.local/share/cargo/bin/ironbar
 
 # swaync: notif service
 exec_always --no-startup-id swaync

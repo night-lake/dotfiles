@@ -1,0 +1,83 @@
+{
+	"anchor_to_edges": true,
+	"start": [
+		{
+			"class": "button_padding",
+			"type": "label",
+			"label": "",
+			"on_click_left": "rofi -show drun -run-command \"swaymsg exec '{cmd}'\""
+		},
+		{
+			"all_monitors": false,
+			"type": "workspaces"
+		}
+	],
+	"center": [
+		{
+			"type": "clock",
+			"format": "%d %h %Y | %I:%M %p"
+		}
+	],
+	"end": [
+		{
+			"class": "button_padding",
+			"max_items": 3,
+			"truncate": {
+				"length": 50,
+				"mode": "end"
+			},
+			"type": "clipboard"
+		},
+		{
+			"bar": [
+				{
+					"class": "button_padding",
+					"label": "",
+					"on_click": "popup:toggle",
+					"type": "button"
+				}
+			],
+			"class": "power-menu",
+			"popup": [
+				{
+					"orientation": "vertical",
+					"type": "box",
+					"widgets": [
+						{
+							"label": "Power menu",
+							"name": "header",
+							"type": "label"
+						},
+						{
+							"type": "box",
+							"widgets": [
+								{
+									"class": "power-btn",
+									"label": "<span font-size='20pt'></span>",
+									"on_click": "!shutdown now",
+									"type": "button"
+								},
+								{
+									"class": "power-btn",
+									"label": "<span font-size='20pt'></span>",
+									"on_click": "!reboot",
+									"type": "button"
+								}
+							]
+						}
+					]
+				}
+			],
+			"tooltip": "Up: {{30000:uptime -p | cut -d ' ' -f2-}}",
+			"type": "custom"
+		},
+		{
+			"class": "button_padding",
+			"type": "label",
+			"label": "",
+			"on_click_left": "swaync-client -t -sw"
+		}
+	],
+	"icon_theme": "Papirus-Dark",
+	"position": "bottom"
+}

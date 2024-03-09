@@ -1,8 +1,8 @@
 # reload the configuration file
 bindsym $mod+Shift+c reload
 
-# kill ironbar
-bindsym $mod+Shift+r exec --no-startup-id killall -q ironbar
+# refresh waybar
+bindsym $mod+Shift+r exec --no-startup-id killall -q waybar && waybar
 
 # show power options 
 bindsym $mod+p exec --no-startup-id wlogout

@@ -5,7 +5,7 @@ exec_always --no-startup-id wbg /home/amelia/.dotfiles/wallpapers/foggy_peaks.pn
 exec_always --no-startup-id swayosd-server
 
 # ironbar: bar
-exec_always --no-startup-id /home/amelia/.local/share/cargo/bin/ironbar
+exec_always --no-startup-id waybar
 
 # swaync: notif service
 exec_always --no-startup-id swaync

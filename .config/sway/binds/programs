@@ -1,11 +1,11 @@
-# rofi: drun/window/calc
-bindsym $mod+space exec rofi -show drun -run-command "swaymsg exec '{cmd}'"
+# rofi: drun
+bindsym $mod+space exec fuzzel
 
-# rofi: emoji
-bindsym $mod+f exec rofi -show emoji
+# bemoji: emoji
+bindsym $mod+f exec BEMOJI_PICKER_CMD="fuzzel --dmenu" bemoji
 
 # rofi: clipboard
-bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command "swaymsg exec '{cmd}'"
+#bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command "swaymsg exec '{cmd}'"
 
 # kitty
 bindsym $mod+Return exec alacritty

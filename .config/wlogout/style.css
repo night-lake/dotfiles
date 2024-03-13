@@ -4,28 +4,25 @@
 }
 
 window {
-	background-color: rgba(24, 25, 38, 0.9);
+	background-color: rgba(24, 25, 38, 0.5);
 }
 
 button {
-	border-radius: 0;
-	border-color: black;
+	border-radius: 12px;
 	text-decoration-color: #a5adcb;
 	color: #cad3f5;
 	background-color: #24273a;
-	border-style: solid;
-	border-width: 1px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 25%;
+	margin: 4px;
 }
 
 button:focus,
 button:active {
-	background-color: #f5bde6;
+	border-bottom: 2px solid #f5bde6;
 	outline-style: none;
-	color: #24273a;
-	text-decoration-color: #1es2030;
+	background-color: #494d64;
 }
 
 button:hover {
@@ -34,9 +31,10 @@ button:hover {
 	text-decoration-color: #a5adcb;
 	color: #cad3f5;
 }
-/* 
+
 #lock {
 	background-image: image(
+		url("./icons/lock.svg"),
 		url("/usr/share/wlogout/icons/lock.png"),
 		url("/usr/local/share/wlogout/icons/lock.png")
 	);
@@ -44,6 +42,7 @@ button:hover {
 
 #logout {
 	background-image: image(
+		url("./icons/logout.svg"),
 		url("/usr/share/wlogout/icons/logout.png"),
 		url("/usr/local/share/wlogout/icons/logout.png")
 	);
@@ -51,6 +50,7 @@ button:hover {
 
 #suspend {
 	background-image: image(
+		url("./icons/suspend.svg"),
 		url("/usr/share/wlogout/icons/suspend.png"),
 		url("/usr/local/share/wlogout/icons/suspend.png")
 	);
@@ -58,6 +58,7 @@ button:hover {
 
 #hibernate {
 	background-image: image(
+		url("./icons/hibernate.svg"),
 		url("/usr/share/wlogout/icons/hibernate.png"),
 		url("/usr/local/share/wlogout/icons/hibernate.png")
 	);
@@ -65,6 +66,7 @@ button:hover {
 
 #shutdown {
 	background-image: image(
+		url("./icons/shutdown.svg"),
 		url("/usr/share/wlogout/icons/shutdown.png"),
 		url("/usr/local/share/wlogout/icons/shutdown.png")
 	);
@@ -72,7 +74,8 @@ button:hover {
 
 #reboot {
 	background-image: image(
+		url("./icons/reboot.svg"),
 		url("/usr/share/wlogout/icons/reboot.png"),
 		url("/usr/local/share/wlogout/icons/reboot.png")
 	);
-} */
+}

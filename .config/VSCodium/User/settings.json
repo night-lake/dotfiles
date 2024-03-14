@@ -28,7 +28,7 @@
 	},
 	"catppuccin.boldKeywords": true,
 	"editor.bracketPairColorization.enabled": true,
-	"editor.fontFamily": "'FiraCode Nerd Font', 'FiraCode Nerd Font', 'FiraCode Nerd Font'",
+	"editor.fontFamily": "'JetBrainsMono-NF-Regular', 'JetBrainsMono-NF-Regular', 'JetBrainsMono-NF-Regular'",
 	"editor.fontLigatures": true,
 	"editor.formatOnSave": true,
 	"editor.guides.bracketPairs": true,
@@ -100,8 +100,7 @@
 	},
 	"catppuccin.accentColor": "pink",
 	"workbench.activityBar.location": "top",
-	"terminal.external.linuxExec": "kitty",
-	"terminal.integrated.defaultProfile.linux": "fish",
+	"terminal.external.linuxExec": "wezterm",
 	"git.autofetch": true,
 	"catppuccin.extraBordersEnabled": true,
 	"terminal.integrated.enableMultiLinePasteWarning": false,
@@ -112,5 +111,11 @@
 	"[scss]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"redhat.telemetry.enabled": false
+	"redhat.telemetry.enabled": false,
+	"window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
+	"window.titleSeparator": " |  ",
+	"[plaintext]": {
+		"editor.unicodeHighlight.ambiguousCharacters": false,
+		"editor.unicodeHighlight.invisibleCharacters": false
+	}
 }

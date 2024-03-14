@@ -1,11 +1,17 @@
-# split in horizontal orientation
-bindsym $mod+Ctrl+h split h
-
-# split in vertical orientation
-bindsym $mod+Ctrl+v split v
-
-# change container layout (stacked, tabbed, toggle split)
 bindsym $mod+t layout tabbed
-bindsym $mod+Ctrl+s layout stacking
-bindsym $mod+Ctrl+w layout tabbed
-bindsym $mod+Ctrl+e layout toggle split
+
+mode "layout" {
+		bindsym h split h
+		bindsym v split v
+		bindsym t layout tabbed
+		bindsym s layout stacking
+		bindsym w layout tabbed
+		bindsym e layout toogle split
+
+        # back to normal: Enter or Escape or $mod+y
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+y mode "default"
+}
+
+bindsym $mod+y mode "layout"

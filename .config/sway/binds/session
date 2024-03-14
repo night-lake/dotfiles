@@ -5,4 +5,4 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r exec --no-startup-id killall -q waybar && waybar
 
 # show power options 
-bindsym $mod+p exec --no-startup-id wlogout
+bindsym $mod+Shift+q exec --no-startup-id wlogout

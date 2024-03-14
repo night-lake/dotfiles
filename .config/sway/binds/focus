@@ -1,5 +1,5 @@
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # change focus
 bindsym $mod+j focus left
@@ -18,3 +18,4 @@ bindsym $mod+a focus parent
 
 # focus the child container
 bindsym $mod+d focus child
+

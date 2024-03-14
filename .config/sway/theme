@@ -26,22 +26,19 @@ set $mantle    #1e2030
 set $crust     #181926
 
 # target                 title     bg    text   indicator  border
-client.focused $pink $base $text $rosewater $pink
-client.focused_inactive $overlay0 $base $text $rosewater $overlay0
-client.unfocused $overlay0 $base $text $rosewater $overlay0
-client.urgent $peach $base $peach $overlay0 $peach
-client.placeholder $overlay0 $base $text $overlay0 $overlay0
-client.background $base
+client.focused           $pink 	   $base $text  $rosewater $pink
+client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
+client.unfocused         $overlay0 $base $text  $rosewater $overlay0
+client.urgent            $peach    $base $peach $overlay0  $peach
+client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
+client.background        $base
 
 # set gaps between windows
-gaps inner 6
-gaps outer 4
-
-# smart borders; only draw borders if number of windows = >1
-# smart_borders on
+gaps inner 4
+gaps outer 6
 
 # set font
-font pango:FiraCode Nerd Font 12
+font pango:IBM Plex Sans 12
 
 corner_radius 12
 

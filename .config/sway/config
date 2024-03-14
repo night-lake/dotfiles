@@ -1,4 +1,3 @@
-# Please see https://i3wm.org/docs/userguide.html for a complete reference!
 set $mod Mod4
 
 include /home/amelia/.config/sway/autostart
@@ -12,6 +11,3 @@ include /home/amelia/.config/sway/binds/session
 include /home/amelia/.config/sway/binds/workspace
 include /home/amelia/.config/sway/theme
 include /home/amelia/.config/sway/window_rules
-
-# exec_always --no-startup-id source /etc/profile.d/locale.sh
-# exec_always --no-startup-id xinput set-prop 164;10u "libinput Disable While Typing Enabled" 0

@@ -1,0 +1,1 @@
+neofetch --ascii ~/.config/neofetch/ascii --ascii_colors 6 5 "\e[38;2;239;241;245" 5 6

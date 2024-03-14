@@ -5,10 +5,10 @@ bindsym $mod+space exec fuzzel
 bindsym $mod+f exec BEMOJI_PICKER_CMD="fuzzel --dmenu" bemoji
 
 # rofi: clipboard
-#bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command "swaymsg exec '{cmd}'"
+# bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command "swaymsg exec '{cmd}'"
 
 # kitty
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec wezterm
 
 # file manager
 bindsym $mod+e exec thunar

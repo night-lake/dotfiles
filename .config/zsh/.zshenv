@@ -2,16 +2,16 @@ export TERMINAL="wezterm"
 export EDITOR="nvim"
 export VISUAL="codium"
 
-# -------------------------------
-# |      Force XDG Paths        |
-# -------------------------------
+# SECTION: XDG Directory Locations
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
 export XDG_BIN_HOME=$HOME/.local/bin
 export XDG_TRASH_HOME=$XDG_DATA_HOME/Trash
+# !SECTION
 
+# SECTION: Properly use XDG Paths for non-compliant applications
 # ZSH
 # compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 export HISTFILE="$XDG_STATE_HOME"/zsh/history
@@ -28,11 +28,14 @@ export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 
 # Cargo
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
+# !SECTION
 
 # -------------------------------
 # |       Update PATH           |
 # -------------------------------
 export PATH="$PATH:$XDG_BIN_HOME:$CARGO_HOME/bin"
 
-# Misc environment variables
+# SECTION: Theme related variables
 export GTK_THEME="Catppuccin-Macchiato-Standard-Pink-Dark:dark"
+export QT_QPA_PLATFORMTHEME="qt6ct"
+# !SECTION

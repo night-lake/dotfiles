@@ -20,7 +20,7 @@ button {
 
 button:focus,
 button:active {
-	border-bottom: 2px solid #f5bde6;
+	box-shadow: inset 0 0 12px 0 #f5bde6;
 	outline-style: none;
 	background-color: #494d64;
 }

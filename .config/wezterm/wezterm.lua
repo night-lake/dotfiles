@@ -2,7 +2,6 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config = {
-	font = wezterm.font("JetBrains Mono"),
 	color_scheme = "Catppuccin Macchiato",
 	default_cursor_style = "SteadyUnderline",
 	font_size = 10.5,

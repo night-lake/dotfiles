@@ -37,6 +37,10 @@ client.background        $base
 gaps inner 4
 gaps outer 6
 
+# remove titlebars
+default_border pixel 2
+default_floating_border pixel 2
+
 # set font
 font pango:IBM Plex Sans 12
 

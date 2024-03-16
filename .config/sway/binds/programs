@@ -13,11 +13,17 @@ bindsym $mod+Return exec wezterm
 # file manager
 bindsym $mod+e exec thunar
 
-# manual capture (click and drag)
-bindsym $mod+Shift+Print exec --no-startup-id flameshot gui
-
-# capture full screen
-bindsym Shift+Print exec --no-startup-id flameshot screen
-
 # notif center
 bindsym $mod+w exec --no-startup-id swaync-client -t -sw
+
+# screenshot tool: selection -> clipboard
+bindsym $mod+Print exec grim -g "$(slurp)" - | wl-copy && notify-send "Caught in 1080P" "Selection copied to your clipboard!"
+
+# screenshot tool: full -> clipboard
+bindsym $mod+Shift+Print exec grim - | wl-copy && notify-send "Caught in 1080P" "Screen copied to your clipboard!"
+
+# screenshot tool: selection -> folder
+bindsym $mod+Ctrl+Print exec grim -g "$(slurp)" ~/pictures/screenshots/$(date +'%s_grim.png') | wl-copy && notify-send "Caught in 4K" "Selection saved to your screenshot folder!"
+
+# screenshot tool: full -> folder
+bindsym $mod+Ctrl+Shift+Print exec grim ~/pictures/screenshots/$(date +'%s_grim.png') | wl-copy && notify-send "Caught in 4K" "Screen saved to your screenshot folder!"

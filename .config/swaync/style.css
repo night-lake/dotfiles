@@ -1,15 +1,16 @@
 * {
 	all: unset;
 	font-size: 14px;
-	font-family: "FiraCode Nerd Font Mono";
+	font-weight: 400;
+	font-family: "IBM Plex Sansv";
 	transition: 200ms;
 }
 
 .floating-notifications.background .notification-row .notification-background {
-	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #363a4f;
-	border-radius: 12.6px;
+	box-shadow: 0 0 8px 0 rgba(30, 32, 48, 0.8), inset 0 0 0 2px #f5bde6;
+	border-radius: 9.5px;
 	margin: 18px;
-	background-color: #24273a;
+	background-color: rgba(36, 39, 58, 0.8);
 	color: #cad3f5;
 	padding: 0;
 }
@@ -19,7 +20,7 @@
 	.notification-background
 	.notification {
 	padding: 7px;
-	border-radius: 12.6px;
+	border-radius: 9.5px;
 }
 
 .floating-notifications.background
@@ -35,17 +36,22 @@
 	.notification
 	.notification-content {
 	margin: 7px;
+	padding: 3px;
 }
 
+/* notification title */
 .floating-notifications.background
 	.notification-row
 	.notification-background
 	.notification
 	.notification-content
 	.summary {
-	color: #cad3f5;
+	color: #f5bde6;
+	font-size: 17px;
+	font-weight: 600;
+	padding: 8px;
 }
-
+/* ?????????? */
 .floating-notifications.background
 	.notification-row
 	.notification-background
@@ -53,8 +59,9 @@
 	.notification-content
 	.time {
 	color: #a5adcb;
+	padding: 8px;
 }
-
+/* notification main text */
 .floating-notifications.background
 	.notification-row
 	.notification-background
@@ -62,6 +69,7 @@
 	.notification-content
 	.body {
 	color: #cad3f5;
+	padding: 8px;
 }
 
 .floating-notifications.background
@@ -107,7 +115,7 @@
 	> *
 	.notification-action:active {
 	box-shadow: inset 0 0 0 1px #494d64;
-	background-color: #f5bde6;
+	background-color: #7dc4e4;
 	color: #cad3f5;
 }
 
@@ -139,8 +147,8 @@
 }
 
 .control-center {
-	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #363a4f;
-	border-radius: 12.6px;
+	box-shadow: 0 0 8px 0 rgba(30, 32, 48, 0.8), inset 0 0 0 2px #f5bde6;
+	border-radius: 9.5px;
 	margin: 18px;
 	background-color: #24273a;
 	color: #cad3f5;
@@ -168,7 +176,7 @@
 
 .control-center .widget-title button:active {
 	box-shadow: inset 0 0 0 1px #494d64;
-	background-color: #f5bde6;
+	background-color: #7dc4e4;
 	color: #24273a;
 }
 
@@ -206,7 +214,9 @@
 	.notification
 	.notification-content
 	.summary {
-	color: #cad3f5;
+	color: #f5bde6;
+	font-weight: 500;
+	padding: 8px;
 }
 
 .control-center
@@ -225,6 +235,7 @@
 	.notification-content
 	.body {
 	color: #cad3f5;
+	padding: 8px;
 }
 
 .control-center
@@ -270,7 +281,7 @@
 	> *
 	.notification-action:active {
 	box-shadow: inset 0 0 0 1px #494d64;
-	background-color: #f5bde6;
+	background-color: #7dc4e4;
 	color: #cad3f5;
 }
 
@@ -303,7 +314,7 @@
 
 .control-center .notification-row .notification-background:active {
 	box-shadow: inset 0 0 0 1px #494d64;
-	background-color: #f5bde6;
+	background-color: #7dc4e4;
 	color: #cad3f5;
 }
 
@@ -372,4 +383,10 @@ trough {
 	background: #494d64;
 	border-radius: 8px;
 	border: 1px solid #6e738d;
+}
+
+/* notification icon */
+.image,
+.body-image {
+	border-radius: 16px;
 }

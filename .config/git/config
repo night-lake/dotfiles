@@ -1,19 +1,15 @@
 [user]
-	name = Amelia Rose
-	email = ameliarose@duck.com
-	signingKey = A3E8BEED6A2CC981
+name = Amelia Rose
+email = ameliarose@duck.com
+signingKey = A3E8BEED6A2CC981
 [init]
-	defaultBranch = main
+defaultBranch = main
 [pull]
-	rebase = true
+rebase = true
 [commit]
-	gpgsign = true
-[credential "https://github.com"] 
-	helper = !/usr/bin/gh auth git-credential
-[credential "https://gist.github.com"]
-	helper = !/usr/bin/gh auth git-credential
+gpgsign = true
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+clean = git-lfs clean -- %f
+smudge = git-lfs smudge -- %f
+process = git-lfs filter-process
+required = true

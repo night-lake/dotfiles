@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Slack
+StartupWMClass=Slack
+Comment=Slack Desktop
+GenericName=Slack Client for Linux
+Exec=zsh -ci "export XDG_CONFIG_HOME=$XDG_STATE_HOME; /usr/bin/slack"
+Icon=slack
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Network;InstantMessaging;
+MimeType=x-scheme-handler/slack;
+X-Desktop-File-Install-Version=0.27

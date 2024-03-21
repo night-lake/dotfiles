@@ -28,12 +28,15 @@ export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 
 # Cargo
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
+
+# N
+export N_PREFIX="$XDG_DATA_HOME/n"
 # !SECTION
 
 # -------------------------------
 # |       Update PATH           |
 # -------------------------------
-export PATH="$PATH:$XDG_BIN_HOME:$CARGO_HOME/bin"
+export PATH="$PATH:$XDG_BIN_HOME:$CARGO_HOME/bin:$N_PREFIX/bin"
 
 # SECTION: Theme related variables
 export GTK_THEME="Catppuccin-Macchiato-Standard-Pink-Dark:dark"

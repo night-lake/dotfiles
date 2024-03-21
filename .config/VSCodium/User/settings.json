@@ -28,7 +28,7 @@
 	},
 	"catppuccin.boldKeywords": true,
 	"editor.bracketPairColorization.enabled": true,
-	"editor.fontFamily": "'FiraCode Nerd Font Mono', 'FiraCode Nerd Font', 'FiraCode Nerd Font'",
+	"editor.fontFamily": "'JetBrainsMono Nerd Font Mono', 'JetBrainsMono Nerd Font Mono', 'JetBrainsMono Nerd Font Mono'",
 	"editor.fontLigatures": true,
 	"editor.formatOnSave": true,
 	"editor.guides.bracketPairs": true,
@@ -117,5 +117,9 @@
 	"[plaintext]": {
 		"editor.unicodeHighlight.ambiguousCharacters": false,
 		"editor.unicodeHighlight.invisibleCharacters": false
-	}
+	},
+	"editor.unicodeHighlight.allowedCharacters": {
+		"ᅠ": true
+	},
+	"editor.unicodeHighlight.includeStrings": false
 }

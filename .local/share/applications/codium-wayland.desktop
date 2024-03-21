@@ -1,0 +1,27 @@
+[Desktop Action new-empty-window]
+Exec=/usr/bin/codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland --new-window %F
+Icon=vscodium
+Name=New Empty Window
+
+[Desktop Entry]
+Actions=new-empty-window;
+Categories=Utility;Development;IDE;
+Comment[en_US]=Code Editing. Redefined.
+Comment=Code Editing. Redefined.
+Exec=/usr/bin/codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland --unity-launch %F
+GenericName[en_US]=Text Editor
+GenericName=Text Editor
+Icon=vscodium
+Keywords=vscode;
+MimeType=text/plain;inode/directory;
+Name[en_US]=VSCodium - Wayland
+Name=VSCodium - Wayland
+Path=
+StartupNotify=false
+StartupWMClass=codium-url-handler
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-RunOnDiscreteGpu=false
+X-KDE-SubstituteUID=false
+X-KDE-Username=

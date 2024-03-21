@@ -1,0 +1,29 @@
+# rofi: drun
+bindsym $mod+space exec fuzzel
+
+# bemoji: emoji
+bindsym $mod+f exec BEMOJI_PICKER_CMD="fuzzel --dmenu" bemoji
+
+# rofi: clipboard
+# bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command "swaymsg exec '{cmd}'"
+
+# kitty
+bindsym $mod+Return exec wezterm
+
+# file manager
+bindsym $mod+e exec thunar
+
+# notif center
+bindsym $mod+w exec --no-startup-id swaync-client -t -sw
+
+# screenshot tool: selection -> clipboard
+bindsym $mod+Print exec grim -g "$(slurp)" - | wl-copy && notify-send "Caught in 1080P" "Selection copied to your clipboard!"
+
+# screenshot tool: full -> clipboard
+bindsym $mod+Shift+Print exec grim - | wl-copy && notify-send "Caught in 1080P" "Screen copied to your clipboard!"
+
+# screenshot tool: selection -> folder
+bindsym $mod+Ctrl+Print exec grim -g "$(slurp)" ~/pictures/screenshots/$(date +'%s_grim.png') | wl-copy && notify-send "Caught in 4K" "Selection saved to your screenshot folder!"
+
+# screenshot tool: full -> folder
+bindsym $mod+Ctrl+Shift+Print exec grim ~/pictures/screenshots/$(date +'%s_grim.png') | wl-copy && notify-send "Caught in 4K" "Screen saved to your screenshot folder!"

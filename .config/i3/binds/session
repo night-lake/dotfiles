@@ -1,0 +1,8 @@
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# restart i3 inplace
+bindsym $mod+Shift+r restart
+
+# show power options 
+bindsym $mod+Shift+e exec --no-startup-id rofi -show power-menu -modi power-menu:rofi-power-menu 

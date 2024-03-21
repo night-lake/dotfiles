@@ -46,4 +46,4 @@ SETUVAR fish_pager_color_selected_background:\x1d
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/home/amelia/\x2elocal/bin\x1e/usr/local/bin\x1e/usr/bin\x1e/var/lib/flatpak/exports/bin\x1e/usr/lib/jvm/default/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl\x1e/home/amelia/\x2elocal/share/cargo/bin
+SETUVAR fish_user_paths:/usr/local/bin\x1e/usr/bin\x1e/var/lib/flatpak/exports/bin\x1e/usr/lib/jvm/default/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl\x1e/home/amelia/\x2elocal/share/cargo/bin
